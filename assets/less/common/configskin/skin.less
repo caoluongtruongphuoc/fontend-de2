@@ -1,0 +1,65 @@
+// device width
+@width-xs: 360px; // extra small
+@width-sm: 576px; // small
+@width-md: 768px; // medium
+@width-lg: 992px; // large
+@width-xl: 1200px; //extra large 
+// color main
+@blue-color: #0ca8c9;
+@black-color: #222222;
+@gray-color-tag: #bababa;
+@gray-color-language: #a3a3a3;
+@gray-color-border: #ebebeb;
+@gray-color-banner: #f0f0f0;
+@gray-color-product: #f5f5f5;
+@gray-color-newletter: #d3d3d3;
+@gray-color-footer: #f2f2f2;
+@gray-color-link: #8f8f8f;
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+    //width: 1920px;
+}
+.container {
+    width: 100%;
+    margin: auto;
+    max-width: 1140px;
+}
+@media all and (min-width: @width-lg) and (max-width: @width-xl) {
+    .container{
+        max-width: 960px;
+    }
+}
+@media all and (min-width: @width-md) and (max-width: @width-lg) {
+    .container{
+        max-width: 720px;
+    }
+}
+@media all and (min-width: @width-sm) and (max-width: @width-md) {
+    .container{
+        max-width: 540px;
+    }
+}
+@media all and (min-width: @width-xs) and (max-width: @width-sm) {
+    .container{
+        max-width: 330px;
+    }
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    //margin: 0 -15px;
+}
+.row-15 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.divider{
+    width: 0;
+    border-right: 1px solid @gray-color-border;
+    height: 24px;
+    margin: auto;
+}
+

@@ -1,0 +1,181 @@
+.footer {
+    &__top {
+        background-color: @gray-color-footer;
+        padding-top: 53px;
+        padding-bottom: 49px;
+        .left-top {
+            width: 25%;
+            .contact {
+                padding: 0 15px;
+                &--tag {
+                    font-size: 18px;
+                    font-weight: 600;
+                    padding-bottom: 19px;
+                    letter-spacing: 0.5px;
+                }
+                &__info {
+                    display: flex;
+                    box-sizing: border-box;
+                    line-height: 21px;
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+                    &--icon {
+                        width: 16px;
+                        vertical-align: top;
+                        color: @blue-color;
+                        font-size: 16px;
+                    }
+                    &--text {
+                        padding-left: 21px;
+                        font-size: 13px;
+                        color: @gray-color-link;
+                        letter-spacing: 0.2px;
+                        //word-spacing: 0px;
+                    }
+                }
+                &__social {
+                    padding-top: 20px;
+                    font-size: 13px;
+                    line-height: 30px;
+                    &--icon {
+                        margin-right: 20px;
+                        &:hover {
+                            color: @blue-color;
+                        }
+                    }
+                }
+            }
+        }
+        .right-top {
+            width: 75%;
+            .links-item {
+                padding-left: 12.85%;      
+                width: 33.33%;
+                box-sizing: border-box;
+                &--tag {
+                    font-size: 18px;
+                    font-weight: 600;
+                    padding-bottom: 8px;
+                    letter-spacing: 0.5px;
+                    box-sizing: border-box;
+                }
+                &--link {
+                    letter-spacing: 0.2px;
+                    //word-spacing: -0.2px;
+                    font-size: 13px;
+                    line-height: 36px;
+                    a {
+                        color: @gray-color-link;
+                        text-decoration: none;
+                        &:hover {
+                            color: @blue-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__bot {
+        .row {
+            align-items: center;
+        }
+        .left-bot {
+            padding: 20px 0;
+            width: 50%;
+            font-size: 12px;
+            line-height: 28px;
+            font-weight: 500;
+            color: @gray-color-link;
+            letter-spacing: 0.2px;
+            span {
+                color: @blue-color;
+            }
+        }
+        .right-bot {
+            width: 50%;
+            line-height: 18px;
+            img {
+                float: right;
+            }
+        }
+    }
+}
+//responsive
+@media all and (min-width: @width-sm) and (max-width: @width-md) {
+    .footer {
+        &__top {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            .row-15 {
+                flex-direction: column-reverse
+            }
+            .left-top {
+                padding-top: 10px;
+                width: 100%;
+            }
+            .right-top {
+                width: 100%;
+                .links-item {
+                    padding: 0 15px;
+                    &--link {
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+        &__bot {
+            .left-bot, .right-bot {
+                text-align: center;
+                width: 100%;
+            }
+            .right-bot {
+                img {
+                    float: none;
+                }
+            }
+        }
+    }
+}
+@media all and (min-width: @width-xs) and (max-width: @width-sm) {
+    .footer {
+        &__top {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            .row-15 {
+                flex-direction: column-reverse
+            }
+            .left-top {
+                padding-top: 10px;
+                width: 100%;
+                .contact {
+                    &__social {
+                        padding-top: 0px;
+                    }
+                }
+            }
+            .right-top {
+                width: 100%;
+                .links-item {
+                    width: 100%;
+                    padding: 10px 15px 0 15px;
+                    &--link {
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+        &__bot {
+            .left-bot, .right-bot {
+                text-align: center;
+                width: 100%;
+            }
+            .right-bot {
+                img {
+                    float: none;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

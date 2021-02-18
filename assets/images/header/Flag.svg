@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 13" width="17" height="13">
+	<defs>
+		<image width="17" height="13" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAMAAAB4p3UoAAAAAXNSR0IB2cksfwAAAftQTFRFIyMzQkNgNjdRPj9WOzxUNjZQOztUPD1WNT1WaSYzhCMneCIpeCIqhy44TBAVTlB2tbXvnJ3Mn5/Onp7NnZ3OnZ7NnqDQjJHH/9Tl/+/y/+3y/+zz//z/upCUODhcjo7DfX6pd3eleXilf36peXmleXuoZ22h0pSk/6Wm9KOp86Op9KKp/7G4m2ZqNDRZeHizZ2ibaWmbaGibaGmbaWqdVlqTz6S1/8nI977E+MDF97/F97/E/9LXnXd7MDBXZGSnU1KNXFyTWFmRUlKMWFiQWlyUQ0yLwnGH/o+Q8IeP8IaO8IaN/5qimVdbFxZFREWSQUKCOTp8Ojt9QkKCPDx+Oz1/ICZxwYui/7O09rC29rC1/7e/nXF0CBVIFzGJGC55GC56Fy15GC54Fy55GDJ8AB1xslZz/3J27XB77W97/3SBl0tSg2l2ypu1vpSsyKC0xZyxvZStxZyyxp6zxJ6044WT+YKK74KM74KN8IKN74KL/4SQmFVbpkBE/2Vs/2Np/2Fo/2Jo/2Fn/2No82Nv6GFx62Bw7GFw62Fw/2NzlEBJlU5V/3qJ7neD7niE7niF/3qIlU1VmEFL/2h69WZ09GV09GZ19WZ19WV19GR0/2d6mEFKnFxi/5ek/JWh+5Wh/JWg/5aknFtiFQAALgAAIQAAIgAALQAAFgAAMHqfPQAAAKl0Uk5TWomJiYmJiYmJiYmJiYlazP/////////////////MsP//////////////////sK///////////////////6+v//////////////////+vr/////////////////+vr/////////////////+vr////////////////////6+v////////////////r6///////6+z//////////+zv///////vzlcV1dcOXPzbQAAAADsSURBVHicY2BgZGJmYWVj5+Dk4ubm5uHlY+AXEBQSFhEVE5eQlJKSkpaRZZCTV1BUUlZRVVPX0NTS1NbRZdDTNzA0NDI2MTUzt7C0sraxZbCzd3B0cnZxdXP38PT08vbxZfDzDwgMCg4JDQuPiIyMjIqOYYiNi09ITEpOSU1Lz8jIzMjKZsjJzcsvKCwqLiktK6+orKquYaitq29orG9qam5pbWtr7+jsYuju6e3r7+/vA4H+/t4JExkmTZ4yddq0adOnT582dfqMmbNmM8yZO2/+vAXz5gFJEF64iGHxkqXLli5btnQpBC1fAQDtrlJfg2KgiQAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Header">
+		<g id="Top">
+			<g id="Select Your LanguageLanguage">
+				<use id="Flag" href="#img1" x="0" y="0" />
+			</g>
+		</g>
+	</g>
+</svg>
