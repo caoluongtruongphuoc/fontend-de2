@@ -5,11 +5,11 @@ $(function(){
         var src = "";
         var name = "";
         if(value==1){
-            src = '/assets/images/header/Flag.svg';
+            src = 'assets/images/header/Flag.svg';
             name = "Tiếng Việt";
         }
         else{
-            src = '/assets/images/header/Flag.svg';
+            src = 'assets/images/header/Flag.svg';
             name = "English";
         }
         $('.language__show--img img').attr({'src':src});
