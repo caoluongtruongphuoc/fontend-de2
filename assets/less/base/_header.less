@@ -5,12 +5,12 @@
         .left-top {
             padding: 20px 0;
             display: flex;
-            //align-items: center;
             width: 60%;
             .contact-item {
                 display: flex;
-                flex-wrap: wrap;
-                box-sizing: border-box;
+                .flex-wrap(wrap);
+                .box-sizing(border-box);
+                height: 32px;
                 &:not(:last-child){
                     margin-right: 20px;
                 }
@@ -29,6 +29,9 @@
                     }
                 }
                 &__content {
+                    position: relative; 
+                    top: -2px;
+                    height: 27px;
                     font-size: 12px;
                     line-height: 18px;
                     font-weight: 500;
@@ -121,7 +124,7 @@
         .left-mid {
             margin-left: auto;
             display: flex;
-            box-sizing: border-box;
+            .box-sizing(border-box);
             padding: 29px 0;
             &__item {
                 &:not(:last-child) {
@@ -137,15 +140,17 @@
                 border-radius: 20px; 
                 z-index: 1;
                 font-size: 12px;
-                select, input, button{
+                select, 
+                input, 
+                button{
                     outline: none;
                     border: none;
                 }
                 input{
                     width: 54%;
-                    //padding-left: 20px;
                     padding-right: 20px;
                     margin-right: 5px;
+                    word-spacing: 1px;
                 }
                 select{
                     background-color: transparent;
@@ -153,13 +158,13 @@
                     padding-right: 12px;
                     margin-right: 15px;
                     color: gray;
+                    letter-spacing: 0.2px;
                 } 
                 button {
                     width: 10%;
                     height: 100%;
                     border-radius: 0 20px 20px 0;
                     background-color: @blue-color;
-                    //border : 1px solid @blue-color;
                     text-align: center;
                     color: white;
                     font-size: 18px;
@@ -204,7 +209,6 @@
         }
         background-color: @blue-color;
         height: 50px;
-        //padding: 14px 0;
         color: white;
         position: relative;
         .left-bot {
@@ -213,7 +217,6 @@
                 &__title {
                     padding: 14px 0;
                     display: flex;
-                    //align-items: center;
                     &--icon-list {
                         margin-right: 15px;
                         width: 30px;
@@ -250,7 +253,7 @@
                         list-style: none;
                         .li-lv-1{
                             line-height: 45px;
-                            box-sizing: border-box;
+                            .box-sizing(border-box);
                             &:not(:last-child){
                                 border-bottom: 1px solid @gray-color-border;
                             }
@@ -296,7 +299,6 @@
                 &__item {
                     font-size: 14px;
                     font-weight: 600;
-                    //line-height: 24px;
                     letter-spacing: 0.5px;
                     &:not(:first-child) {
                         margin-left: 56.5px;
@@ -406,9 +408,13 @@
                 }
             }
             .left-mid {
+                width: 100%;
                 padding: 0 0 10px 0;        
                 .search-box {
-                    width: 400px;
+                    width: 420px;
+                }
+                .tool {
+                    margin-left: auto;
                 }
             }
         }
@@ -417,7 +423,7 @@
             height: auto;
             position: unset;
             .container {
-                flex-direction: column-reverse;
+                .flex-direction(column-reverse);
             }
             .left-bot {
                 padding: 0;
@@ -466,7 +472,6 @@
                 margin: auto;
                 width: 100%;
                 .page {  
-                    //flex-direction: column;
                     &__item {
                         background-color: @black-color;
                         border-radius: 5px;
@@ -512,6 +517,7 @@
             }
             .left-mid {
                 padding: 0 0 10px 0;
+                width: 100%;
                 &__item {
                     &:not(:last-child) {
                         margin-right: 5px;
@@ -534,13 +540,16 @@
                         font-size: 15px;
                     }
                 }
+                .tool {
+                    margin-left: auto;
+                }
             }
         }
         &__bot {
             display: none;
             height: auto;
             .container {
-                flex-direction: column-reverse;
+                .flex-direction(column-reverse);
             }
             .left-bot {
                 padding: 0;
@@ -589,7 +598,7 @@
                 margin: auto;
                 width: 100%;
                 .page {  
-                    flex-direction: column;
+                    .flex-direction(column);
                     height: 100%;
                     &__item {
                         background-color: @black-color;

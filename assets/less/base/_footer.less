@@ -14,8 +14,9 @@
                     letter-spacing: 0.5px;
                 }
                 &__info {
+                    text-decoration: none;
                     display: flex;
-                    box-sizing: border-box;
+                    .box-sizing(border-box);
                     line-height: 21px;
                     &:not(:last-child) {
                         margin-bottom: 10px;
@@ -31,7 +32,6 @@
                         font-size: 13px;
                         color: @gray-color-link;
                         letter-spacing: 0.2px;
-                        //word-spacing: 0px;
                     }
                 }
                 &__social {
@@ -39,7 +39,9 @@
                     font-size: 13px;
                     line-height: 30px;
                     &--icon {
+                        text-decoration: none;
                         margin-right: 20px;
+                        color: @gray-color-link;
                         &:hover {
                             color: @blue-color;
                         }
@@ -52,17 +54,16 @@
             .links-item {
                 padding-left: 12.85%;      
                 width: 33.33%;
-                box-sizing: border-box;
+                .box-sizing(border-box);
                 &--tag {
                     font-size: 18px;
                     font-weight: 600;
                     padding-bottom: 8px;
                     letter-spacing: 0.5px;
-                    box-sizing: border-box;
+                    .box-sizing(border-box);
                 }
                 &--link {
                     letter-spacing: 0.2px;
-                    //word-spacing: -0.2px;
                     font-size: 13px;
                     line-height: 36px;
                     a {
@@ -77,11 +78,11 @@
         }
     }
     &__bot {
+        padding: 20px 0;
         .row {
             align-items: center;
         }
         .left-bot {
-            padding: 20px 0;
             width: 50%;
             font-size: 12px;
             line-height: 28px;
@@ -108,10 +109,10 @@
             padding-top: 30px;
             padding-bottom: 30px;
             .row-15 {
-                flex-direction: column-reverse
+                .flex-direction(column-reverse);
             }
             .left-top {
-                padding-top: 10px;
+                padding-top: 30px;
                 width: 100%;
             }
             .right-top {
@@ -125,7 +126,11 @@
             }
         }
         &__bot {
-            .left-bot, .right-bot {
+            .row {
+                .flex-direction(column-reverse);
+            }
+            .left-bot, 
+            .right-bot {
                 text-align: center;
                 width: 100%;
             }
@@ -143,10 +148,10 @@
             padding-top: 10px;
             padding-bottom: 10px;
             .row-15 {
-                flex-direction: column-reverse
+                .flex-direction(column-reverse);
             }
             .left-top {
-                padding-top: 10px;
+                padding-top: 20px;
                 width: 100%;
                 .contact {
                     &__social {
@@ -166,7 +171,11 @@
             }
         }
         &__bot {
-            .left-bot, .right-bot {
+            .row {
+                .flex-direction(column-reverse);
+            }
+            .left-bot, 
+            .right-bot {
                 text-align: center;
                 width: 100%;
             }

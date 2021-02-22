@@ -19,7 +19,6 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Poppins';
-    //width: 1920px;
 }
 .container {
     width: 100%;
@@ -46,14 +45,48 @@ body {
         max-width: 330px;
     }
 }
+// dùng hàm
+.transform-translateX(@_x) {
+    -moz-transform: translateX(@_x);
+    -webkit-transform: translateX(@_x);
+    -o-transform: translateX(@_x);
+    -ms-transform: translateX(@_x);
+    transform: translateX(@_x);
+}
+.transform-translateY(@_y) {
+    -moz-transform: translateY(@_y);
+    -webkit-transform: translateY(@_y);
+    -o-transform: translateY(@_y);
+    -ms-transform: translateY(@_y);
+    transform: translateY(@_y);
+}
+.transform-translate(@_x, @_y) {
+    -moz-transform: translate(@_x,@_y);
+    -webkit-transform: translate(@_x, @_y);
+    -o-transform: translate(@_x, @_y);
+    -ms-transform: translate(@_x, @_y);
+    transform: translate(@_x, @_y);
+}
+.box-sizing(@_bs) {
+    -moz-box-sizing: @_bs;
+    -webkit-box-sizing: @_bs;
+    box-sizing: @_bs;
+}
+.flex-wrap(@_fw) {
+    flex-wrap: @_fw;
+    -ms-flex-wrap: @_fw;
+}
+.flex-direction(@_fd) {
+    flex-direction: @_fd;
+    -ms-flex-direction: @_fd;
+}
 .row {
     display: flex;
-    flex-wrap: wrap;
-    //margin: 0 -15px;
+    .flex-wrap(wrap);
 }
 .row-15 {
     display: flex;
-    flex-wrap: wrap;
+    .flex-wrap(wrap);
     margin: 0 -15px;
 }
 .divider{
@@ -62,4 +95,8 @@ body {
     height: 24px;
     margin: auto;
 }
+.slick-slide {
+    outline: none;
+}
+
 
